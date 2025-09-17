@@ -104,10 +104,6 @@ let date = new Date()
 console.log(date.getFullYear() + "/" + date.getMonth() + "/" + date.getDate())
 
 
-
-
-
-
 // ============================================================
 // TODO-5: ARRAY + SPREAD — find MIN and MAX from 10 numbers
 // ============================================================
@@ -117,6 +113,12 @@ Task:
 2) Use spread syntax with Math.min(...) and Math.max(...) to find extremes.
 3) Display both values.
 */
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+console.log(Math.min(...arr))
+console.log(Math.max(...arr))
+
 
 // ===================================================================
 // TODO-6: EXCEPTIONS — try/catch/finally with EMPTY ARRAY edge case
