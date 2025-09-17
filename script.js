@@ -22,6 +22,40 @@ Task:
 4) Create an instance/object and output its attributes using the getter(s).
 */
 
+class Student {
+   firstName;
+   lastName;
+   gpa;
+
+   constructor(firstName, lastName, gpa) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.gpa = gpa;
+   }
+   get fullName() {
+      return this.firstName + " " + this.lastName
+   }
+
+   get getGpa() {
+      return this.gpa;
+   }
+
+   set updateGpa(newGpa) {
+      if (0 <= newGpa && newGpa <= 4.0)
+         this.gpa = newGpa;
+   }
+}
+
+let student = new Student("Abdulmajeed", "Aljuhaymi", 4.0);
+console.log(student.fullName)
+console.log(student.getGpa)
+student.updateGpa = 3.95;
+console.log(student.getGpa)
+
+
+
+
+
 // ====================================
 // TODO-2: OBJECT AS MAP + for...in LOOP
 // ====================================
@@ -30,6 +64,14 @@ Task:
 1) Make an object used as a "map" (key → value), e.g., course codes → titles.
 2) Iterate over it with for...in and display each key and value.
 */
+
+courses = {"ICS104": "001", "ICS108": "002", "SWE206": "003" , "SWE363": "004"}
+
+
+for (course in courses) {
+   console.log(course, courses[course])
+}
+
 
 // =========================================
 // TODO-3: STRING OBJECT — charAt() & length
@@ -40,6 +82,13 @@ Task:
 2) Use .charAt(index) and .length to output characters and size.
 */
 
+str = "Hello, World!"
+
+console.log(str.charAt(0))
+console.log(str.length)
+
+
+
 // ===================================
 // TODO-4: DATE — day, month, and year
 // ===================================
@@ -49,6 +98,15 @@ Task:
 2) Find and display the current day of month, month (0–11), and year.
 //    (Hint: getDate(), getMonth(), getFullYear() )
 */
+
+let date = new Date()
+
+console.log(date.getFullYear() + "/" + date.getMonth() + "/" + date.getDate())
+
+
+
+
+
 
 // ============================================================
 // TODO-5: ARRAY + SPREAD — find MIN and MAX from 10 numbers
