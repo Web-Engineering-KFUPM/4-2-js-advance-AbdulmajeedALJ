@@ -146,6 +146,7 @@ try {
    console.log("Execution completed.");
 }
 
+
 // ===================================================================================
 // TODO-7: REGEX + forEach — find words containing 'ab' and log matches from the list
 // ===================================================================================
@@ -166,5 +167,6 @@ words.forEach(word => {
       console.log(`${word} matches!`);
    }
 }
+);
 
 // End of Advance JavaScript Lab — good luck!
