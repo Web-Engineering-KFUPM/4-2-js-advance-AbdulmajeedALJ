@@ -131,6 +131,21 @@ Task:
    in each block so you can see the flow of control.
 */
 
+function findMax(arr) {
+   if (arr.length === 0) {
+      throw new Error("Array is empty");
+   }
+   return Math.max(...arr);
+}
+
+try {
+   console.log(findMax([]));
+} catch (e) {
+   console.log("Error: " + e.message);
+} finally {
+   console.log("Execution completed.");
+}
+
 // ===================================================================================
 // TODO-7: REGEX + forEach — find words containing 'ab' and log matches from the list
 // ===================================================================================
@@ -142,5 +157,6 @@ Given: const words = ["ban", "babble", "make", "flab"];
 3) For matches, log "<word> matches!".
 4) Display the words that matches the pattern.
 */
+
 
 // End of Advance JavaScript Lab — good luck!
